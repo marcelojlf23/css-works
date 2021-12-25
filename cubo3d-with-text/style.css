@@ -51,6 +51,18 @@ body {
     align-items: center;
     background: linear-gradient(#151515, #00ec00);
     transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    transform-style: preserve-3d;
+}
+.cube div span h2 {
+    position: absolute;
+    font-size: 10em;
+    color: #fff;
+    transform: translateZ(50px);
+}
+.cube div span h2:nth-child(1) {
+    transform: translateZ(0px) translateY(10px);
+    color: rgba(0, 0, 0, 0.1);
+    filter: blur(2px);
 }
 .top{
     position: absolute;
